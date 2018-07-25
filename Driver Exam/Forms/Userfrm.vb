@@ -36,4 +36,8 @@ Public Class Userfrm
             MetroTextBox1.Visible = False
         End If
     End Sub
+
+    Private Sub Userfrm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim NAM As Integer = 0
+    End Sub
 End Class
