@@ -221,7 +221,7 @@ Partial Class _31_40
         Me.gb2.Controls.Add(Me.rbtn2c)
         Me.gb2.Controls.Add(Me.rbtn2a)
         Me.gb2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gb2.Location = New System.Drawing.Point(1105, 44)
+        Me.gb2.Location = New System.Drawing.Point(1105, 42)
         Me.gb2.Name = "gb2"
         Me.gb2.Size = New System.Drawing.Size(1144, 563)
         Me.gb2.TabIndex = 8
@@ -237,7 +237,7 @@ Partial Class _31_40
         Me.MaterialLabel4.Location = New System.Drawing.Point(261, 185)
         Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel4.Name = "MaterialLabel4"
-        Me.MaterialLabel4.Size = New System.Drawing.Size(1080, 38)
+        Me.MaterialLabel4.Size = New System.Drawing.Size(792, 76)
         Me.MaterialLabel4.TabIndex = 5
         Me.MaterialLabel4.Text = resources.GetString("MaterialLabel4.Text")
         '
@@ -1682,10 +1682,10 @@ Partial Class _31_40
         Me.Controls.Add(Me.MetroTextBox1)
         Me.Controls.Add(Me.MetroPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "_31_40"
         Me.Resizable = False
         Me.Style = MetroFramework.MetroColorStyle.Pink
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gb2.ResumeLayout(False)

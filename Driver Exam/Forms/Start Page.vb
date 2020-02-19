@@ -11,7 +11,7 @@ Public Class Start_Page
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs)
         Try
             Me.Hide()
-            Page110.Show()
+            _1_10.Show()
         Catch ex As Exception
 
         End Try
@@ -20,6 +20,6 @@ Public Class Start_Page
 
     Private Sub MetroButton2_Click(sender As Object, e As EventArgs) Handles MetroButton2.Click
         Me.Hide()
-        Page110.Show()
+        _1_10.Show()
     End Sub
 End Class

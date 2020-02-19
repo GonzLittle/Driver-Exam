@@ -976,8 +976,10 @@
 </value>
   </data>
   <data name="MaterialLabel4.Text" xml:space="preserve">
-    <value>32.	When two vehicles meet on an upgrade road where neither can pass, the vehicle that must back up so that the other vehicle can pass is
-(Kapag nagkasalubong ang dalawang sasakyan sa isang matarik na kalye na isa lang ang makakaraan, aling sasakyan ang dapat umatras upang magbigay daan?)</value>
+    <value>32.	When two vehicles meet on an upgrade road where neither can pass, the vehicle that must back up
+                so that the other vehicle can pass is?
+(Kapag nagkasalubong ang dalawang sasakyan sa isang matarik na kalye na isa lang ang makakaraan, aling sasakyan
+                ang dapat umatras upang magbigay daan?)</value>
   </data>
   <data name="PictureBox18.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

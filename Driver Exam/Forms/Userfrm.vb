@@ -14,10 +14,12 @@ Public Class Userfrm
         End If
         If _privilege = "Administrator" Then
             Dim _pwd As String = MetroTextBox1.Text.Trim
-            Dim _constpwd = "pgluhrext"
+            Dim _constpwd = "admin"
             If _pwd = _constpwd Then
+
                 Me.Hide()
-                Result.Show()
+                Cursor.Current = Cursors.WaitCursor
+                Adminfrm.Show()
             Else
                 MetroMessageBox.Show(Me, vbCrLf & "Password is Invalid!" & vbCrLf & vbCrLf & vbCrLf & "©(PGLU-HRMD Series of 2018)", "Road Safety Program (Drivers Exam)", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 'MsgBox(ex.Message)
@@ -37,7 +39,11 @@ Public Class Userfrm
         End If
     End Sub
 
-    Private Sub Userfrm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim NAM As Integer = 0
+    Private Sub Userfrm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Try
+            Application.Exit()
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

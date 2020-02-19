@@ -1639,10 +1639,10 @@ Partial Class _41_50
         Me.Controls.Add(Me.MetroTextBox1)
         Me.Controls.Add(Me.MetroPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "_41_50"
         Me.Resizable = False
         Me.Style = MetroFramework.MetroColorStyle.Red
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gb2.ResumeLayout(False)

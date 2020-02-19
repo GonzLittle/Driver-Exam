@@ -567,10 +567,10 @@ Partial Class _11_20
         Me.rbtn3a.MouseState = MaterialSkin.MouseState.HOVER
         Me.rbtn3a.Name = "rbtn3a"
         Me.rbtn3a.Ripple = True
-        Me.rbtn3a.Size = New System.Drawing.Size(345, 30)
+        Me.rbtn3a.Size = New System.Drawing.Size(380, 30)
         Me.rbtn3a.TabIndex = 2
-        Me.rbtn3a.Text = "a." & Global.Microsoft.VisualBasic.ChrW(9) & "Signaled your intention and checked traffic" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(ipahiwatig ang iyong intensiyon)" &
-    ""
+        Me.rbtn3a.Text = "a." & Global.Microsoft.VisualBasic.ChrW(9) & "Signaled your intention and checked traffic" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(ipahiwatig ang iyong intension a" &
+    "t masiyasat ang trapiko)"
         Me.rbtn3a.UseVisualStyleBackColor = True
         '
         'Label15
@@ -1363,7 +1363,7 @@ Partial Class _11_20
         Me.gb3.Controls.Add(Me.rbtn3c)
         Me.gb3.Controls.Add(Me.rbtn3a)
         Me.gb3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gb3.Location = New System.Drawing.Point(1051, 65)
+        Me.gb3.Location = New System.Drawing.Point(1059, 69)
         Me.gb3.Name = "gb3"
         Me.gb3.Size = New System.Drawing.Size(1144, 563)
         Me.gb3.TabIndex = 10
@@ -1417,10 +1417,9 @@ Partial Class _11_20
         Me.rbtn3b.MouseState = MaterialSkin.MouseState.HOVER
         Me.rbtn3b.Name = "rbtn3b"
         Me.rbtn3b.Ripple = True
-        Me.rbtn3b.Size = New System.Drawing.Size(380, 30)
+        Me.rbtn3b.Size = New System.Drawing.Size(225, 30)
         Me.rbtn3b.TabIndex = 3
-        Me.rbtn3b.Text = "b." & Global.Microsoft.VisualBasic.ChrW(9) & "Signaled your intention" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(ipahiwatig ang iyong intension at masiyasat ang trap" &
-    "iko)"
+        Me.rbtn3b.Text = "b." & Global.Microsoft.VisualBasic.ChrW(9) & "Signaled your intention" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(ipahiwatig ang iyong intension)"
         Me.rbtn3b.UseVisualStyleBackColor = True
         '
         'rbtn3c
@@ -1482,6 +1481,9 @@ Partial Class _11_20
         '
         'gb1
         '
+        Me.gb1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb1.BackColor = System.Drawing.Color.White
         Me.gb1.Controls.Add(Me.PictureBox20)
         Me.gb1.Controls.Add(Me.Label32)
@@ -1491,7 +1493,6 @@ Partial Class _11_20
         Me.gb1.Controls.Add(Me.rbtn1b)
         Me.gb1.Controls.Add(Me.rbtn1c)
         Me.gb1.Controls.Add(Me.rbtn1a)
-        Me.gb1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gb1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gb1.Location = New System.Drawing.Point(0, 0)
         Me.gb1.Name = "gb1"
@@ -1752,10 +1753,10 @@ Partial Class _11_20
         Me.Controls.Add(Me.MetroTextBox1)
         Me.Controls.Add(Me.MetroPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "_11_20"
         Me.Resizable = False
         Me.Style = MetroFramework.MetroColorStyle.Teal
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.gb4.ResumeLayout(False)
         Me.gb4.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()

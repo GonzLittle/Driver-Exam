@@ -6,10 +6,10 @@ Module Functions
     '=================================================For Validation===============================================================
     Public Sub checklabels()
         Dim _label
-        For Each _label In Page110.Controls
+        For Each _label In _1_10.Controls
             If TypeOf _label Is Label Then
                 If _label.Text = "" Then
-                    MetroMessageBox.Show(Page110, vbCrLf & "Check your answers between 1-10!" & vbCrLf & vbCrLf & vbCrLf & "©(PGLU-HRMD Series of 2018)", "Road Safety Program (Drivers Exam)", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MetroMessageBox.Show(_1_10, vbCrLf & "Check your answers between 1-10!" & vbCrLf & vbCrLf & vbCrLf & "©(PGLU-HRMD Series of 2018)", "Road Safety Program (Drivers Exam)", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Exit Sub
                     Exit For
                 End If
@@ -151,17 +151,17 @@ Module Functions
                 cmd.Parameters("@t62").Value = _51_60.totalrating.Text.Trim
 
                 cmd.Parameters("@t0").Value = _51_60.applicantname.Text.Trim
-                cmd.Parameters("@t1").Value = Page110.Label11.Text.Trim
-                cmd.Parameters("@t1").Value = Page110.Label11.Text.Trim
-                cmd.Parameters("@t2").Value = Page110.Label12.Text.Trim
-                cmd.Parameters("@t3").Value = Page110.Label13.Text.Trim
-                cmd.Parameters("@t4").Value = Page110.Label14.Text.Trim
-                cmd.Parameters("@t5").Value = Page110.Label15.Text.Trim
-                cmd.Parameters("@t6").Value = Page110.Label16.Text.Trim
-                cmd.Parameters("@t7").Value = Page110.Label17.Text.Trim
-                cmd.Parameters("@t8").Value = Page110.Label18.Text.Trim
-                cmd.Parameters("@t9").Value = Page110.Label19.Text.Trim
-                cmd.Parameters("@t10").Value = Page110.Label20.Text.Trim
+                cmd.Parameters("@t1").Value = _1_10.Label11.Text.Trim
+                cmd.Parameters("@t1").Value = _1_10.Label11.Text.Trim
+                cmd.Parameters("@t2").Value = _1_10.Label12.Text.Trim
+                cmd.Parameters("@t3").Value = _1_10.Label13.Text.Trim
+                cmd.Parameters("@t4").Value = _1_10.Label14.Text.Trim
+                cmd.Parameters("@t5").Value = _1_10.Label15.Text.Trim
+                cmd.Parameters("@t6").Value = _1_10.Label16.Text.Trim
+                cmd.Parameters("@t7").Value = _1_10.Label17.Text.Trim
+                cmd.Parameters("@t8").Value = _1_10.Label18.Text.Trim
+                cmd.Parameters("@t9").Value = _1_10.Label19.Text.Trim
+                cmd.Parameters("@t10").Value = _1_10.Label20.Text.Trim
 
                 '-------11-20------------
                 cmd.Parameters("@t11").Value = _11_20.Label11.Text.Trim
@@ -239,16 +239,16 @@ Module Functions
             Dim _Counter As Integer
             _Counter = 0
             '=====1-10========
-            If Page110.rbtn1a.Checked = True Then _Counter += 1
-            If Page110.rbtn2b.Checked = True Then _Counter += 1
-            If Page110.rbtn3a.Checked = True Then _Counter += 1
-            If Page110.rbtn4a.Checked = True Then _Counter += 1
-            If Page110.rbtn5a.Checked = True Then _Counter += 1
-            If Page110.rbtn6c.Checked = True Then _Counter += 1
-            If Page110.rbtn7b.Checked = True Then _Counter += 1
-            If Page110.rbtn8c.Checked = True Then _Counter += 1
-            If Page110.rbtn9a.Checked = True Then _Counter += 1
-            If Page110.rbtn10a.Checked = True Then _Counter += 1
+            If _1_10.rbtn1a.Checked = True Then _Counter += 1
+            If _1_10.rbtn2b.Checked = True Then _Counter += 1
+            If _1_10.rbtn3a.Checked = True Then _Counter += 1
+            If _1_10.rbtn4a.Checked = True Then _Counter += 1
+            If _1_10.rbtn5a.Checked = True Then _Counter += 1
+            If _1_10.rbtn6c.Checked = True Then _Counter += 1
+            If _1_10.rbtn7b.Checked = True Then _Counter += 1
+            If _1_10.rbtn8c.Checked = True Then _Counter += 1
+            If _1_10.rbtn9a.Checked = True Then _Counter += 1
+            If _1_10.rbtn10a.Checked = True Then _Counter += 1
 
             '=====11-20========
             If _11_20.rbtn1b.Checked = True Then _Counter += 1
@@ -315,10 +315,10 @@ Module Functions
             Dim _total As Double
             _score = _51_60.totalscore.Text
             _total = (_score / 60) * 100
-            If _Counter <= 30 Then
-                _51_60.totalrating.Text = "Failed"
-            ElseIf _Counter >= 31 Then
-                _51_60.totalrating.Text = "Passed"
+            If _Counter <= 39 Then
+                _51_60.totalrating.Text = "Failed!"
+            ElseIf _Counter >= 40 Then
+                _51_60.totalrating.Text = "Passed!"
             End If
 
         Catch ex As Exception

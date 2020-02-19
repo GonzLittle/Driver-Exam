@@ -1740,10 +1740,10 @@ Partial Class _21_30
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimizeBox = False
         Me.Name = "_21_30"
         Me.Resizable = False
         Me.Style = MetroFramework.MetroColorStyle.Orange
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()

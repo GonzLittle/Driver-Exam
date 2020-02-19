@@ -102,39 +102,39 @@ Public Class _51_60
                     '=======================================1-10==========================================
                     If _number <= 10 And _number > 0 Then
                         Me.Hide()
-                        Page110.Show()
-                        Page110.MetroTextBox1.Text = _number
+                        _1_10.Show()
+                        _1_10.MetroTextBox1.Text = _number
                         Select Case _number
                             Case 1
-                                Page110.gb1.BringToFront()
-                                Page110.gb1.Dock = DockStyle.Fill
+                                _1_10.gb1.BringToFront()
+                                _1_10.gb1.Dock = DockStyle.Fill
                             Case 2
-                                Page110.gb2.BringToFront()
-                                Page110.gb2.Dock = DockStyle.Fill
+                                _1_10.gb2.BringToFront()
+                                _1_10.gb2.Dock = DockStyle.Fill
                             Case 3
-                                Page110.gb3.BringToFront()
-                                Page110.gb3.Dock = DockStyle.Fill
+                                _1_10.gb3.BringToFront()
+                                _1_10.gb3.Dock = DockStyle.Fill
                             Case 4
-                                Page110.gb4.BringToFront()
-                                Page110.gb4.Dock = DockStyle.Fill
+                                _1_10.gb4.BringToFront()
+                                _1_10.gb4.Dock = DockStyle.Fill
                             Case 5
-                                Page110.gb5.BringToFront()
-                                Page110.gb5.Dock = DockStyle.Fill
+                                _1_10.gb5.BringToFront()
+                                _1_10.gb5.Dock = DockStyle.Fill
                             Case 6
-                                Page110.gb6.BringToFront()
-                                Page110.gb6.Dock = DockStyle.Fill
+                                _1_10.gb6.BringToFront()
+                                _1_10.gb6.Dock = DockStyle.Fill
                             Case 7
-                                Page110.gb7.BringToFront()
-                                Page110.gb7.Dock = DockStyle.Fill
+                                _1_10.gb7.BringToFront()
+                                _1_10.gb7.Dock = DockStyle.Fill
                             Case 8
-                                Page110.gb8.BringToFront()
+                                _1_10.gb8.BringToFront()
                                 gb8.Dock = DockStyle.Fill
                             Case 9
-                                Page110.gb9.BringToFront()
-                                Page110.gb9.Dock = DockStyle.Fill
+                                _1_10.gb9.BringToFront()
+                                _1_10.gb9.Dock = DockStyle.Fill
                             Case 10
-                                gb10.BringToFront()
-                                gb10.Dock = DockStyle.Fill
+                                _1_10.gb10.BringToFront()
+                                _1_10.gb10.Dock = DockStyle.Fill
                         End Select
                         '=============================================11-20========================================================
                     ElseIf _number > 10 And _number <= 20 Then
@@ -508,4 +508,7 @@ Public Class _51_60
         'e.Cancel = True
     End Sub
 
+    Private Sub _51_60_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

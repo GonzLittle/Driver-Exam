@@ -33,7 +33,7 @@ Partial Class Register
         Me.MaterialSingleLineTextField1 = New MaterialSkin.Controls.MaterialSingleLineTextField()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.MetroDateTime1 = New MetroFramework.Controls.MetroDateTime()
+        Me.MetroDateTime1 = New System.Windows.Forms.MaskedTextBox()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -174,7 +174,6 @@ Partial Class Register
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.MetroDateTime1, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuCustomLabel5, 0, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.MaterialSingleLineTextField1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuCustomLabel3, 0, 2)
@@ -184,6 +183,7 @@ Partial Class Register
         Me.TableLayoutPanel1.Controls.Add(Me.MaterialSingleLineTextField3, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.BunifuCustomLabel4, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.MaterialSingleLineTextField5, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.MetroDateTime1, 1, 3)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(23, 106)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
@@ -198,12 +198,9 @@ Partial Class Register
         'MetroDateTime1
         '
         Me.MetroDateTime1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MetroDateTime1.FontSize = MetroFramework.MetroDateTimeSize.Small
-        Me.MetroDateTime1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.MetroDateTime1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MetroDateTime1.Location = New System.Drawing.Point(110, 102)
-        Me.MetroDateTime1.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
-        Me.MetroDateTime1.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
-        Me.MetroDateTime1.MinimumSize = New System.Drawing.Size(0, 25)
+        Me.MetroDateTime1.Mask = "00/00/0000"
         Me.MetroDateTime1.Name = "MetroDateTime1"
         Me.MetroDateTime1.Size = New System.Drawing.Size(316, 25)
         Me.MetroDateTime1.TabIndex = 4
@@ -250,5 +247,5 @@ Partial Class Register
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroDateTime1 As MetroFramework.Controls.MetroDateTime
+    Friend WithEvents MetroDateTime1 As MaskedTextBox
 End Class

@@ -86,7 +86,7 @@ Partial Class Userfrm
         Me.MetroTextBox1.MaxLength = 32767
         Me.MetroTextBox1.Name = "MetroTextBox1"
         Me.MetroTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.MetroTextBox1.PromptText = "Admin Password Here...."
+        Me.MetroTextBox1.WaterMark = "Admin Password Here...."
         Me.MetroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.MetroTextBox1.SelectedText = ""
         Me.MetroTextBox1.SelectionLength = 0
